@@ -1,14 +1,16 @@
-//Part 3
+//Part 4
+import java.util.*;
+
 public class Main {
 
   public static void main(String[] args)
   {
     int limit = Integer.parseInt(args[0]);
     if(args.length == 1 && limit > 0) {
-        String[] printable = new String[limit];
-        printable = fizzBuzzArray(limit);
+        List<String> printlist = new ArrayList<String>();
+        printlist = fizzBuzzList(limit);
         for(int i = 0; i < limit; i++){
-          System.out.println(printable[i]);
+          System.out.println(printlist.get(i));
         }
     }
     else {
@@ -17,8 +19,8 @@ public class Main {
     
   }
   
-  public static String[] fizzBuzzArray(final int n){
-    String[] ret = new String[n];
+  public static List<String> fizzBuzzList(final int n){
+    List<String> ret = new ArrayList<String>();
     for(int i = 1; i <= n; i++)
         {
           String output = "";
@@ -29,10 +31,10 @@ public class Main {
             output += "Buzz";
           }
           if(output == "") {
-            ret[i-1] = (Integer.toString(i));
+            ret.add(Integer.toString(i));
           }
           else {
-            ret[i-1] = output;
+            ret.add(output);
           }
         }
     return ret;    
