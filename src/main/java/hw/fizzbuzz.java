@@ -1,33 +1,37 @@
-
 import java.util.Arrays;
-import java.util.Scanner;
+
 
 public class fizzbuzz{
-  int n;
+  
 
   public static void main(final String[] args) {
     
-          Scanner keyboard = new Scanner(System.in);
-		System.out.println("enter n integer and i'll calculate which ones a fizz and which ones a buzz!");
-		int n = keyboard.nextInt();
-		for(int i = 0; i < n; i++)
+         int j = Integer.parseInt(args[0]); 
+	
+		for(int i = 0; i < j; i++)
 		{
-			if(i % 5 == 0 && i % 3 == 0)
+			int k = i + 1;
+			if(((k % 3) == 0) && ((k % 5) == 0))
 			{
-				System.out.println("FizzBuzz");
-			}
-			else if(i % 3 == 0)
-			{
-				System.out.println("Fizz");
+				System.out.println("Fizzbuzz");
 				
 			}
-			else if(i % 5 == 0)
+			else if(((i + 1) % 3) == 0)
 			{
-				System.out.println("Buzz");
+				System.out.println("Fizz");
+			
+				
+			}
+			else if(((i + 1) % 5) == 0)
+			{
+			    System.out.println("buzz");
+			   
+				
 			}
 			else
 			{
-				System.out.println(i);
+			
+			    System.out.println(i + 1);
 			}
 		}
   }
