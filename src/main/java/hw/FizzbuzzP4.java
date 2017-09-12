@@ -6,10 +6,10 @@ public class FizzbuzzP4 {
   {
     int limit = Integer.parseInt(args[0]);
     if(args.length == 1 && limit > 0) {
-        List<String> list = new ArrayList<String>();
-        list = fizzBuzzList(limit);
+        List<String> printlist = new ArrayList<String>();
+        printlist = fizzBuzzList(limit);
         for(int i = 0; i < limit; i++){
-          System.out.println(list.get(i));
+          System.out.println(printlist.get(i));
         }
     }
     else {

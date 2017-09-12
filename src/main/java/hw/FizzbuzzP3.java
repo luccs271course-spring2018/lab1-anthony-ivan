@@ -4,10 +4,10 @@ public class FizzbuzzP3 {
   {
     int limit = Integer.parseInt(args[0]);
     if(args.length == 1 && limit > 0) {
-        String[] print = new String[limit];
-        print = fizzBuzzArray(limit);
+        String[] printable = new String[limit];
+        printable = fizzBuzzArray(limit);
         for(int i = 0; i < limit; i++){
-          System.out.println(print[i]);
+          System.out.println(printable[i]);
         }
     }
     else {
