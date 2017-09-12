@@ -1,56 +1,10 @@
-[![Build Status](https://travis-ci.org/LoyolaChicagoCode/hello-java.svg?branch=master)](https://travis-ci.org/LoyolaChicagoCode/hello-java)
+##Part 2 Discussion
+If "n" was a constant, such as 17, an easier solution to this problem would be to simply set the number of loop iterations to the constant. This allows for the command line arguments to be skipped and guarantees that the program will run as intended.
 
-This build will always fail because it has 2 examples of failing tests:
-one based on the source code, and one based on an incorrect test.
+##Part 3 Discussion
+To test the initial solution to Part 2, we can simply run the program with the desired arguments using the command line. This process would be repeated for each unique test case that we are interested in.
 
-# Learning Objectives
+##Part 4 Discussion
+The main changes between Part 2, 3, and 4 were how the outputs of our FizzBuzz computations were stored. For Part 2, the output was simply printed and not stored; alternatively, the solution to Part 3 involved storing the output into an Array. Part 4 was more similar to the previous step, except in utilized Lists instead of Arrays. The rest of the code (like the FizzBuzz computation, for example) remained the same.
 
-* Simple hello world example
-* Building with Gradle (using the Gradle wrapper)
-* Automated unit testing with JUnit
-* Continuous integration with Travis
-
-# System requirements
-
-* Java 6 SDK or later
-
-# Running the Application
-
-On Linux or Mac OS X:
-
-    $ ./gradlew run
-	
-On Windows:
-	
-    > gradlew run
-
-# Running the Tests
-
-On Linux or Mac OS X:
-
-    $ ./gradlew test
-	
-On Windows:
-	
-    > gradlew test
-
-# Running the Application Outside Gradle
-
-Unlike running the application using Gradle's `run` task,
-this allows passing command-line arguments.
-
-On Linux or Mac OS X:
-
-    $ ./build/scripts/hello-java arg1 arg2 arg3
-
-or
-
-    $ java -jar build/lib/hello-java.jar arg1 arg2 arg3
-
-On Windows:
-
-    > .\build\scripts\hello-java arg1 arg2 arg3
-
-or
-
-    > java -jar build\lib\hello-java.jar arg1 arg2 arg3
+The implementation that one uses is important because each version allows the programmer to handle its outputs differently. For example, if you wanted to save multiple FizzBuzz outputs without printing to the screen, you would need to choose the Part 3 or Part 4 solutions.
